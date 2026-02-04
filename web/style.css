@@ -1,0 +1,248 @@
+/*
+ * Responsive dark-themed styling for the ultrasound ECG monitor.
+ * Provides a modern, high-contrast look reminiscent of clinical monitors
+ * and adapts gracefully to phones, tablets and desktop screens.
+ */
+
+:root {
+    --bg: #020617;
+    --bg-elevated: #061124;
+    --card-bg: #0b1c35;
+    --border: #1e293b;
+    --accent: #2dd4bf;
+    --accent-soft: rgba(45, 212, 191, 0.15);
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --danger: #f87171;
+    --font-main: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0f172a 0%, #010914 70%, #000 100%);
+    color: var(--text);
+    font-family: var(--font-main);
+}
+
+.app-header {
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid var(--border);
+    background: rgba(2, 6, 23, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.app-header h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+.app-main {
+    padding: 1rem 0.75rem 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Controls */
+.controls-row {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.controls-row button {
+    flex: 1 1 auto;
+    min-width: 120px;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.1s ease, box-shadow 0.18s ease;
+}
+.controls-row button:hover:not(:disabled) {
+    background: var(--accent-soft);
+    box-shadow: 0 0 12px var(--accent-soft);
+    transform: translateY(-1px);
+}
+.controls-row button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Settings */
+.settings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.setting-group {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    padding: 0.75rem 0.9rem;
+}
+.setting-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.3rem;
+}
+.setting-group .input-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+.setting-group input[type="number"] {
+    width: 5rem;
+    padding: 0.3rem 0.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 0.9rem;
+}
+.setting-group .dash {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+.setting-group .sub {
+    color: var(--muted);
+    font-size: 0.75rem;
+}
+
+/* Canvas card */
+.canvas-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 0.9rem;
+    padding: 0.75rem 0.9rem 1rem;
+    margin-bottom: 1rem;
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.7),
+        0 0 0 1px var(--border);
+}
+.canvas-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+.grid-info {
+    font-size: 0.8rem;
+    color: rgba(148, 163, 184, 0.9);
+}
+#ecgCanvas {
+    width: 100%;
+    height: 260px;
+    display: block;
+    border-radius: 0.75rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+}
+
+/* Metrics */
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+.metric {
+    background: radial-gradient(circle at top left, var(--accent-soft), var(--card-bg));
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    padding: 0.6rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.metric.status-metric {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(2, 6, 23, 0.95), rgba(8, 47, 73, 0.95));
+}
+.metric .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+}
+.metric .value {
+    font-size: 0.95rem;
+    font-variant-numeric: tabular-nums;
+    display: flex;
+    align-items: baseline;
+    gap: 0.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hint {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin: 0.4rem 0 0;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #ecgCanvas {
+        height: 200px;
+    }
+    .metrics {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+/* Snapshot section */
+.snapshot {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: radial-gradient(circle at top left, #0f172a, #020617 60%);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.75);
+}
+
+.snapshot h2 {
+  color: #e5e7eb;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.snapshot img {
+  width: 100%;
+  display: block;
+  background: #ffffff;
+  border-radius: 0.5rem;
+}
+
+/* CSV download link below snapshot */
+.download-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #38bdf8;
+  text-decoration: none;
+  font-variant-numeric: tabular-nums;
+}
+.download-link:hover {
+  text-decoration: underline;
+}
+
+/* hidden helper */
+.hidden {
+  display: none !important;
+}
