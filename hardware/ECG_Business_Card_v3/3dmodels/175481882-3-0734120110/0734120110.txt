@@ -1,0 +1,10 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-06062020-069421";"";
+"REFERENCE";"734120110";"";
+"TraceParts.PartTitle";"MCRF";"";
+"TraceParts.InstanceId";"90-06062020-0694212N3XX9WWY2MK673V115V3T3RA";"";
+"SUPPLIER";"Molex";"";
+"DESIGN";"50 Ohms, MCRF, PCB Vertical Jack Receptacle, SMT, 1.25mm Mounted Height";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.7";"";
