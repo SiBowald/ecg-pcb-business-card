@@ -97,8 +97,6 @@ If the signal looks noisy or flat, it is almost always due to:
 
 ## Files & documentation
 
-Repository: https://github.com/SiBowald/ecg-pcb-business-card
-
 ### Project structure
 
 - `hardware/ECG_Business_Card_v3/`  
@@ -109,7 +107,6 @@ Repository: https://github.com/SiBowald/ecg-pcb-business-card
 ### Running the web app locally
 
 Open `web/ecg.html` in your browser.  
-For best results on some browsers, serve it via a small local server instead of opening the file directly (e.g. VS Code Live Server, Python `http.server`, etc.).
 
 ---
 
