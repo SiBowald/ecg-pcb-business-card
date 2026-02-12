@@ -162,9 +162,9 @@ If you do scope/DAQ measurements on the card, the cleanest approach is to use a 
 
 ## Key ICs used
 
-- **:contentReference[oaicite:0]{index=0} AD8233** – Single-lead ECG analog front end (instrumentation amp + filters) used to acquire the ECG signal from the finger pads.
-- **:contentReference[oaicite:1]{index=1} LTC6990** – Timer/VCO used to generate the FM ultrasound carrier/modulation for audio-band transmission.
-- **:contentReference[oaicite:2]{index=2} ST25DV** (ST25DVxxK series) – NFC tag used for tap-to-open link and NFC energy harvesting support (Android).
+- **AD8233** – Single-lead ECG analog front end (instrumentation amp + filters) used to acquire the ECG signal from the finger pads.
+- **LTC6990** – Timer/VCO used to generate the FM ultrasound carrier/modulation for audio-band transmission.
+- **ST25DV** (ST25DVxxK series) – NFC tag used for tap-to-open link and NFC energy harvesting support.
 
 ---
 
