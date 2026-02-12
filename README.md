@@ -5,6 +5,9 @@ It streams the signal to your phone or computer using frequency-modulated ultras
 
 Goal: power it up, open the web app, and see a clean ECG-like waveform within about a minute, without any special lab setup.
 
+![ECG PCB Business Card - Front](hardware/ECG_Business_Card_v3/Render/ECG_PCB_Business_Card_Front.png)
+![ECG PCB Business Card - Front](hardware/ECG_Business_Card_v3/Render/ECG_PCB_Business_Card_Back.png)
+
 ---
 
 ## Intended use / disclaimer
