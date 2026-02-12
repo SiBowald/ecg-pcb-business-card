@@ -1,16 +1,22 @@
 # ECG PCB Business Card
 
-#### Table of Contents
+## Table of contents
 
-- [What the card does](## What the card does)
-- [Compatibility](## Compatibility (important))
-- [Quick start](## Quick start (battery recommended))
-- [How to hold it](## How to hold it (signal quality))
-- [Powering via NFC](## Powering via NFC energy harvesting (Android only))
-- [What you should see](## What you should see)
-- [Files & documentation](## Files & documentation)
-- [Quick troubleshooting](## Quick troubleshooting)
-- [Measurement / lab notes](## Measurement / lab notes)
+- [ECG PCB Business Card](#ecg-pcb-business-card)
+  - [Intended use / disclaimer](#intended-use--disclaimer)
+  - [Battery safety](#battery-safety)
+  - [What the card does](#what-the-card-does)
+  - [Compatibility (important)](#compatibility-important)
+  - [Quick start (battery recommended)](#quick-start-battery-recommended)
+  - [How to hold it (signal quality)](#how-to-hold-it-signal-quality)
+  - [Powering via NFC energy harvesting (Android only)](#powering-via-nfc-energy-harvesting-android-only)
+  - [What you should see](#what-you-should-see)
+  - [Files & documentation](#files--documentation)
+    - [Project structure](#project-structure)
+    - [Running the web app locally](#running-the-web-app-locally)
+  - [Quick troubleshooting](#quick-troubleshooting)
+  - [Measurement / lab notes](#measurement--lab-notes)
+  - [License](#license)
 
 Educational demo: a functional single-lead ECG front end on a business-card-sized PCB.  
 It streams the signal to your phone or computer using frequency-modulated ultrasound, decoded in a browser-based web app.
