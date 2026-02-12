@@ -164,7 +164,7 @@ If you do scope/DAQ measurements on the card, the cleanest approach is to use a 
 
 - **AD8233** – Single-lead ECG analog front end (instrumentation amp + filters) used to acquire the ECG signal from the finger pads.
 - **LTC6990** – Timer/VCO used to generate the FM ultrasound carrier/modulation for audio-band transmission.
-- **ST25DV** (ST25DVxxK series) – NFC tag used for tap-to-open link and NFC energy harvesting support.
+- **ST25DV** – NFC tag used for tap-to-open link and NFC energy harvesting support.
 
 ---
 
