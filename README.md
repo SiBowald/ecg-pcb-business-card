@@ -16,6 +16,7 @@
     - [Running the web app locally](#running-the-web-app-locally)
   - [Quick troubleshooting](#quick-troubleshooting)
   - [Measurement / lab notes](#measurement--lab-notes)
+  - [Key ICs used](#key-ics-used)
   - [License](#license)
 
 Educational demo: a functional single-lead ECG front end on a business-card-sized PCB.  
@@ -156,6 +157,14 @@ Open `web/ecg.html` in your browser.
 ## Measurement / lab notes
 
 If you do scope/DAQ measurements on the card, the cleanest approach is to use a **battery-powered** measurement device.
+
+---
+
+## Key ICs used
+
+- **:contentReference[oaicite:0]{index=0} AD8233** – Single-lead ECG analog front end (instrumentation amp + filters) used to acquire the ECG signal from the finger pads.
+- **:contentReference[oaicite:1]{index=1} LTC6990** – Timer/VCO used to generate the FM ultrasound carrier/modulation for audio-band transmission.
+- **:contentReference[oaicite:2]{index=2} ST25DV** (ST25DVxxK series) – NFC tag used for tap-to-open link and NFC energy harvesting support (Android).
 
 ---
 
