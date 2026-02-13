@@ -26,6 +26,7 @@ Goal: power it up, open the web app, and see a clean ECG-like waveform within ab
 
 ![ECG PCB Business Card - Front](hardware/ECG_Business_Card_v3/Render/ECG_PCB_Business_Card_Front.png)
 ![ECG PCB Business Card - Front](hardware/ECG_Business_Card_v3/Render/ECG_PCB_Business_Card_Back.png)
+![ECG PCB Business Card - Record](web/Demo/ECG_Business_Card_Record.png)
 
 ---
 
