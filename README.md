@@ -15,7 +15,6 @@
     - [Project structure](#project-structure)
     - [Running the web app locally](#running-the-web-app-locally)
   - [Quick troubleshooting](#quick-troubleshooting)
-  - [Measurement / lab notes](#measurement--lab-notes)
   - [Key ICs used](#key-ics-used)
   - [License](#license)
   - [Sponsorship](#sponsorship)
@@ -109,7 +108,7 @@ Use this when you want a “no battery” demo. It is more sensitive to position
 
 ## What you should see
 
-You should see a waveform similar to the example printed on the back of the card (above “Keep away from children.”).
+You should see a waveform similar to the example printed on the back of the card (below “This is not a medical device.”).
 
 If the signal looks noisy or flat, it is almost always due to:
 - Contact pressure
@@ -162,12 +161,6 @@ Microphone access is required for the ECG monitor.
 - Phone must be unplugged (not charging)
 - Align the card over the NFC coil and try small position shifts
 - Remove thick cases
-
----
-
-## Measurement / lab notes
-
-If you do scope/DAQ measurements on the card, the cleanest approach is to use a **battery-powered** measurement device.
 
 ---
 
