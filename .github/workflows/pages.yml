@@ -5,8 +5,9 @@ on:
     branches:
       - main
     paths:
-      - "./web/ultrasound-ecg-monitor"
+      - "web/**"
       - ".github/workflows/pages.yml"
+
   workflow_dispatch:
 
 permissions:
@@ -33,10 +34,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload web folder
+      - name: Upload web app
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./web"
+          path: "./web/ultrasound-ecg-monitor"
 
       - name: Deploy
         id: deployment
