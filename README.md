@@ -18,6 +18,7 @@
   - [Measurement / lab notes](#measurement--lab-notes)
   - [Key ICs used](#key-ics-used)
   - [License](#license)
+  - [Sponsorship](#sponsorship)
 
 Educational demo: a functional single-lead ECG front end on a business-card-sized PCB.  
 It streams the signal to your phone or computer using frequency-modulated ultrasound, decoded in a browser-based web app.
@@ -172,3 +173,19 @@ If you do scope/DAQ measurements on the card, the cleanest approach is to use a 
 ## License
 
 See `LICENSE`.
+
+---
+
+## Sponsorship
+
+### Rev. C – Supported by NextPCB
+
+Revision C of the **ECG PCB Business Card** was kindly sponsored by **NextPCB**, who supported the PCB manufacturing and assembly of this revision.
+
+Thank you to NextPCB for supporting this project!
+
+<p align="center">
+  <a href="https://www.nextpcb.com/">
+    <img src="hardware/ECG_Business_Card_v3/illustrations/HQ_NextPCB_logo.svg" alt="NextPCB" width="220">
+  </a>
+</p>
