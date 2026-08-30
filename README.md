@@ -186,6 +186,6 @@ Thank you to NextPCB for supporting this project!
 
 <p align="center">
   <a href="https://www.nextpcb.com/">
-    <img src="hardware/ECG_Business_Card_v3/illustrations/HQ_NextPCB_logo.svg" alt="NextPCB" width="220">
+    <img src="hardware/ECG_Business_Card/illustrations/HQ_NextPCB_logo.svg" alt="NextPCB" width="220">
   </a>
 </p>
