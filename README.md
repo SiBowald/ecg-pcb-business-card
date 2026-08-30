@@ -123,14 +123,23 @@ If the signal looks noisy or flat, it is almost always due to:
 
 ### Project structure
 
-- `hardware/ECG_Business_Card_v3/`  
-  KiCad project (schematic + PCB), plus manufacturing outputs and documentation assets.
+- `hardware/ECG_Business_Card/`  
+  KiCad project including the schematic, PCB layout, manufacturing files, and documentation assets.
+
 - `web/`  
-  Browser-based decoder and viewer (`ecg.html`, `script.js`, `style.css`).
+  Browser-based ECG decoder and viewer.
 
-### Running the web app locally
+### Web app
 
-Open `web/ecg.html` in your browser.  
+The ECG monitor can be used either locally or directly through GitHub Pages.
+
+**Online:**  
+[Open the Ultrasound-based ECG Monitor](https://sibowald.github.io/ecg-pcb-business-card/)
+
+**Locally:**  
+Open `web/index.html` in a modern web browser.
+
+Microphone access is required for the ECG monitor.
 
 ---
 
