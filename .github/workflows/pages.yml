@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "web/**"
+      - "./web/ultrasound-ecg-monitor"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
