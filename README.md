@@ -136,7 +136,7 @@ The ECG monitor can be used either locally or directly through GitHub Pages.
 [Open the Ultrasound-based ECG Monitor](https://sibowald.github.io/ecg-pcb-business-card/)
 
 **Locally:**  
-Open `web/index.html` in a modern web browser.
+Open `web/ultrasound-ecg-monitor/index.html` in a modern web browser.
 
 Microphone access is required for the ECG monitor.
 
